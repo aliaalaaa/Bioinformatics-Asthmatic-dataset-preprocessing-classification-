@@ -30,12 +30,17 @@ Asthma is a chronic respiratory condition that causes inflammation and narrowing
 
 ### 2. Data Preprocessing
 - **Filtration:** Removed samples with missing values
+
+  ![Pie chart for Class distribution after filtration](Picture4.png)
+  ![Boxplots after filtration](Picture5.png)
 - **Quantile Normalization:** Standardized probe intensity distributions across samples
 - **Summarization:** Converted probe-level data to gene-level by averaging probe values with the same gene name
 
 ### 3. Post-Processing Visualization
 - Updated boxplots and density plots after normalization and summarization to confirm data quality improvements
-
+  ![Boxplots after Preprocessing](Picture7.png)
+  ![density plot after Preprocessing](Picture9.png)
+  
 ## 📈 Results
 
 - Improved consistency and comparability across samples
@@ -52,8 +57,4 @@ Asthma is a chronic respiratory condition that causes inflammation and narrowing
 
 **Supervisor:** Dr. Rana Hossam Elden  
 **Engineer:** Eng. Heidi Ahmed
-
----
-
-## 📂 Repository Structure (Suggestion)
-
+**Helwan university - Faculty of engineering**
