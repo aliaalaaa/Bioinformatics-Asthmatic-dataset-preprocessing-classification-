@@ -39,7 +39,7 @@ Asthma is a chronic respiratory condition that causes inflammation and narrowing
 ### 3. Post-Processing Visualization
 - Updated boxplots and density plots after normalization and summarization to confirm data quality improvements
   
-  ![Boxplots after Preprocessing](Picture7.png)
+  ![Boxplots after Preprocessing](Picture7.jpg)
   
   ![density plot after Preprocessing](Picture9.png)
   
