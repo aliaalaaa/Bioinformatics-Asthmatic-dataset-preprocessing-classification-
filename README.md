@@ -21,6 +21,7 @@ Asthma is a chronic respiratory condition that causes inflammation and narrowing
 
 ### 1. Exploratory Data Analysis (EDA)
 - Class distribution visualization before filtration
+- 
   ![Pie chart for Class distribution before filtration](Picture1.png)
 - Boxplot and density plots to examine gene expression levels before Normalization
   ![Boxplot before filtration](Picture2.png)
