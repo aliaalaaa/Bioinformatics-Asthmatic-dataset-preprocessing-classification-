@@ -33,6 +33,7 @@ Asthma is a chronic respiratory condition that causes inflammation and narrowing
 
   ![Pie chart for Class distribution after filtration](Picture4.png)
   ![Boxplots after filtration](Picture5.png)
+  
 - **Quantile Normalization:** Standardized probe intensity distributions across samples
 - **Summarization:** Converted probe-level data to gene-level by averaging probe values with the same gene name
 
@@ -104,17 +105,24 @@ In addition to preprocessing, the following steps were performed to further anal
 
 - **Group Labeling:** The dataset is grouped based on disease status (asthmatic vs. non-asthmatic).
 - **Boxplot Visualization:** A boxplot is generated to visualize the distribution of the log-transformed expression values across the samples, with color differentiation based on the disease status.
+   ![Boxplots after log trans](Rplot02.png)
 
 #### C. Statistical Analysis
 
 - **T-Test:** A t-test is performed for each gene to identify significant differences between the two groups (asthmatic vs. non-asthmatic).
 - **Multiple Testing Correction:** The p-values are adjusted for multiple comparisons using the Benjamini-Hochberg (BH) method.
-
+  
+ ![hist of p values](Rplot03.png)
+ 
 #### D. Differential Gene Expression
 
 - **Log2 Fold Change (log2FC):** Log2 fold changes are calculated to measure the magnitude of change in expression between the two groups.
+  ![hist of logfc](Rplot04.png)
+ 
 - **Limma Analysis:** The **limma** package is used to fit a linear model to the expression data and perform eBayes moderated t-tests to identify differentially expressed genes.
 - **Volcano Plot:** A volcano plot is generated to visualize the results of the differential expression analysis, highlighting upregulated, downregulated, and non-significant genes.
+  ![volcano plot](Rplot05.png)
+ 
 
 #### E. Results Export
 
