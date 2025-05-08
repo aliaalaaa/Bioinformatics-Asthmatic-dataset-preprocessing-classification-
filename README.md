@@ -43,7 +43,13 @@ Asthma is a chronic respiratory condition that causes inflammation and narrowing
   ![Boxplots after Preprocessing](Picture7.jpg)
   
   ![density plot after Preprocessing](Picture9.png)
-
+  
+### 4. Post-Processing 
+- exported data in csv after determinint the upregulated and downregulated was entered on string website then the output was entered on cytoscope to choose the most signig=ficant/top genes for use in classification
+  
+### 5. classification and machine learning
+- data was split 80% train and 20% test
+- random forest model was used
 
 ## 🧬 Generalized Preprocessing Pipeline
 
@@ -110,16 +116,14 @@ In addition to preprocessing, the following steps were performed to further anal
 #### C. Statistical Analysis
 
 - **T-Test:** A t-test is performed for each gene to identify significant differences between the two groups (asthmatic vs. non-asthmatic).
-- **Multiple Testing Correction:** The p-values are adjusted for multiple comparisons using the Benjamini-Hochberg (BH) method.
-  
- ![hist of p values](Rplot03.png)
+-  The p-values are adjusted for multiple comparisons using the Benjamini-Hochberg (BH) method.
  
 #### D. Differential Gene Expression
 
 - **Log2 Fold Change (log2FC):** Log2 fold changes are calculated to measure the magnitude of change in expression between the two groups.
   ![hist of logfc](Rplot04.png)
  
-- **Limma Analysis:** The **limma** package is used to fit a linear model to the expression data and perform eBayes moderated t-tests to identify differentially expressed genes.
+- **Limma Analysis:** The **limma** package is used to fit a linear model to the expression data and perform eBayes moderated t-tests to identify differentially expressed genes with threshol 0.05 for p and 0 for log2fc.
 - **Volcano Plot:** A volcano plot is generated to visualize the results of the differential expression analysis, highlighting upregulated, downregulated, and non-significant genes.
   
   ![volcano plot](Rplot05.png)
