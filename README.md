@@ -127,7 +127,7 @@ In addition to preprocessing, the following steps were performed to further anal
 - **Volcano Plot:** A volcano plot is generated to visualize the results of the differential expression analysis, highlighting upregulated, downregulated, and non-significant genes.
   
   ![volcano plot](Rplot05.png)
- 
+  
 
 #### E. Results Export
 
